@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* ================= BODY ================= */
+
+body{
+    background:#81ff75;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* ================= KOTAK SECTION ================= */
+
+.section-box{
+    background:#ecff42;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    margin-bottom:40px;
+    overflow:hidden;
+}
+.judul-section{
+    display:inline-block;
+    background:#45f16a;
+    color:#fff;
+    padding:12px 35px;
+    border-radius:30px;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgb(43, 87, 50);
+    text-align: center;
+}
+/* ================= HEADER ================= */
+
+.header{
+    background:linear-gradient(135deg,#45f16a,#ecff42);
+    padding:20px 30px;
+    color:#333;
+}
+
+.header h5,
+.header h6{
+    margin:0;
+    font-weight:bold;
+}
+
+/* ================= PROFIL ================= */
+
+.profil{
+    text-align:center;
+    padding:45px 30px;
+}
+
+.foto{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #45f16a;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.454);
+    transition:.3s;
+}
+
+.foto:hover{
+    transform:scale(1.05);
+}
+
+.nama_saya{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    font-weight:700;
+    color:#45f16a;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+.profil p{
+    max-width:850px;
+    margin:20px auto 0;
+    color:#444;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ================= SKILL ================= */
+
+.skill-area{
+    padding:35px;
+    text-align: center;
+}
+
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.card-body h6{
+    color:#26e201;
+    font-weight:bold;
+}
+
+.progress{
+    height:12px;
+    border-radius:20px;
+    background:#d7ff5f;
+}
+
+.progress-bar{
+    border-radius:20px;
+}
+
+.bg-danger,
+.bg-primary,
+.bg-warning,
+.bg-success{
+    background:#45f16a !important;
+}
+
+/* ================= PROJECT ================= */
+.p-4{
+    text-align:center;
+}
+
+.project{
+    padding:10px;
+}
+
+.project img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+
+.project .card-body{
+    text-align:center;
+}
+
+.project h5{
+    color:#26e201;
+    font-weight:bold;
+}
+
+.project p{
+    color:#555;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-primary{
+    background:#45f16a;
+    border:none;
+    border-radius:30px;
+    padding:10px 25px;
+    font-weight:bold;
+}
+
+.btn-primary:hover{
+    background:#30c952;
+}
+
+/* ================= JUDUL ================= */
+
+h2,
+h3{
+    color:#45f16a;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+i{
+    color:#45f16a;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    padding:35px;
+    text-align: center;
+}
+
+.contact-card{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+    background:transparent;
+    box-shadow:none;
+    padding:0;
+    max-width:100%;
+}
+
+.contact-item{
+    width:300px;
+    min-height:220px;
+
+    background:#a5f2968e;
+    border-radius:20px;
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.904);
+    transition:.3s;
+}
+
+.contact-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.contact-item i{
+    font-size:55px;
+    color:#45f16a;
+    margin-bottom:15px;
+}
+
+.contact-item h5{
+    font-size:20px;
+    font-weight:bold;
+    color:#163410bd;
+    margin-bottom:10px;
+}
+
+.contact-item p{
+    margin:0;
+    color:#9c9a2374;
+    font-size:14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .nama_saya{
+        font-size:34px;
+    }
+
+    .profil p{
+        font-size:16px;
+    }
+
+    .foto{
+        width:130px;
+        height:130px;
+    }
+
+    .header{
+        text-align:center;
+    }
+
+    .header .text-end{
+        text-align:center !important;
+        margin-top:10px;
+    }
+}
